@@ -22,13 +22,14 @@ For most users, you gonna need to buy one of the following cryptocoins in order 
 Consider the following before you buy any of the 3 choices.
 
 
-Bitcoin: high fees low speed: 3/7 transactions per Secondly (you can buy iota straight away on your prefered exchange)
+Bitcoin: high fees low speed: 3/7 transactions per second (you can buy iota straight away on your prefered exchange)
 
-Ethereum: lower fees higher speed: 20 transactions per Secondly (you can buy iota straight away on your prefered exchange)
+Ethereum: lower fees higher speed: 20 transactions per second (you can buy iota straight away on your prefered exchange)
 
 Litecoin: lowest fees highest speed: 56 transaction per second (con: you have to sell it for btc, usd, or eth on the choosen exchange before you can buy iota)
 
 
+Use GDAX to avoid fees.
 
 For most countries you can choose one of following options
 
@@ -36,7 +37,7 @@ option 1
 
 Globally
 
-localbitcoins > binance / bitfinex
+https://localbitcoins.com/ > binance / bitfinex
 
 option 2
 
