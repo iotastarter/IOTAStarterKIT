@@ -2,28 +2,22 @@
 layout: home-page
 ---
 
-<div class="container-fluid">
+<div class="row">
+<div class="col-sm-12">
+    <center>
+      <div class="center-block" id="logo">
+        <img class="img-responsive" alt="logo WerkBaAr" src="http://res.cloudinary.com/liberationfront/image/upload/v1514058375/901x362_d4xgjd.png">
+      </div>
+    </center>
 
+</div>
+</div>
 
+<div class="row row2">
+<div class="col-sm-4 but"><a href="{{site.baseurl}}/buy" class="icons"><img class="img-responsive" alt="logo WerkBaAr"  src="http://res.cloudinary.com/liberationfront/image/upload/v1514059664/BUT1_vyewjm.png"></a></div>
+<div class="col-sm-4 but"><a href="{{site.baseurl}}/wallet" class="icons"><img class="img-responsive" alt="logo WerkBaAr"  src="http://res.cloudinary.com/liberationfront/image/upload/v1514059668/BUT2_xjxd8g.png"></a></div>
+<div class="col-sm-4 but"><a href="{{site.baseurl}}/nodes" class="icons"><img class="img-responsive" alt="logo WerkBaAr"  src="http://res.cloudinary.com/liberationfront/image/upload/v1514059671/BUT3_cpxmww.png"></a></div>
 
 </div>
 
-
-<ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
-  <li>
-    <div class="post-card">
-      <a href="{{post.url | prepend: site.baseurl}}" class="post-card-image" style="background-image: url( {{ "/assets/img/" | prepend: site.baseurl | append : post.img}} )">
-      </a>
-
-      <div class="post-card-body">
-        {% for tag in post.tags %}
-        <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
-        {% endfor %}
-        <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link"><h3 class="post-card-title">{{post.title}}</h3></a>
-      </div>
-
-    </div>
-  </li>
-  {% endfor %}
-</ol>
+</div>

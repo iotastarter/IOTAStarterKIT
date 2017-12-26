@@ -340,6 +340,7 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+
 }
 
 /* Sections
@@ -349,7 +350,16 @@ html {
  */
 body {
   margin: 0;
+  background-image: url(http://res.cloudinary.com/liberationfront/image/upload/v1513972333/bg4-compressor_tkcsjy.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
+html, body {
+    min-height: 100%;
+}
+
+Read more at: https://html.com/attributes/body-background/
 
 /**
  * Add the correct display in IE 9-.
@@ -762,6 +772,26 @@ template {
   display: none;
 }
 
+/* Header ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.row2 {
+    padding: 100px 0 0 0;
+}
+
+
+#logo {
+Padding: 20px 0 0 0;
+
+}
+
+
 /* = = = = = = = = = = Main Styles = = = = = = = = = = */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -779,9 +809,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: #3e3e40;
   margin: 0;
-  background-color: #fff;
+  background-color: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -868,12 +897,12 @@ pre code {
 }
 
 ::-moz-selection {
-  background: rgba(49, 30, 62, 0.7);
+  background: rgba(49, 30, 62, 11);
   color: #ffffff;
 }
 
 ::selection {
-  background: rgba(49, 30, 62, 0.7);
+  background: rgba(49, 30, 62, 11);
   color: #ffffff;
 }
 
@@ -891,9 +920,9 @@ pre code {
 .main-header {
   font-family: 'Lato', sans-serif;
   padding: 15px 0;
-  background-color: #fff;
-  -webkit-box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
+  background-color: none;
+  -webkit-box-shadow: 0px -5px 15px rgba(49, 30, 62, 11);
+          box-shadow: 0px -5px 15px rgba(49, 30, 62, 11);
 }
 
 .main-header .header-flex {
@@ -921,14 +950,14 @@ pre code {
   text-transform: uppercase;
   font-size: 27px;
   font-weight: 300;
-  color: #311e3e;
+  color: none;
 }
 
 /* NAV ///////////////////////////// */
 
 .sub-menu {
     width:100%;
-    padding:5px 0px;
+    padding:0px 0px;
     position:absolute; /* To style the sub menu we first need to position it. We do that with position:absolute; */
     top:100%;
     left:5px;
@@ -936,7 +965,6 @@ pre code {
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#fff;
 }
 
 .sub-menu2 {
@@ -949,7 +977,6 @@ pre code {
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#fff;
 }
 
 .main-nav li:hover .sub-menu {  /* To get the dropdown menu showing on hover we need to add a line that states when hovering over a list item, show its children.  */
@@ -984,7 +1011,6 @@ pre code {
   z-index: 10;
   width: 300px;
   height: 100%;
-  background-color: #fff;
   padding: 25px 30px;
   -webkit-transform: translate3d(-300px, 0, 0);
           transform: translate3d(-300px, 0, 0);
@@ -1010,12 +1036,12 @@ pre code {
 
 .main-nav ul li a {
   display: block;
-  padding: 15px 0;
+  padding: 20px 0;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 400;
-  font-size: 16px;
-  color: #311e3e;
+  font-weight: 1000;
+  font-size: 24px;
+  color: #fff;
 }
 
 .main-nav ul li a:hover {
@@ -1033,15 +1059,41 @@ pre code {
   text-align: right;
 }
 
-.menu-icon,
-.menu-icon-close,
-.search-icon a,
+
+
 .search-icon-close {
   cursor: pointer;
   font-size: 18px;
-  color: #311e3e;
+
   -webkit-transition: all .4s;
   transition: all .4s;
+}
+
+.fa-search{
+  color: #fff;
+}
+
+.fa-bars {
+color: #fff;
+}
+
+.menu-icon-close {
+color: #fff;
+}
+
+.menu-icon,
+.menu-icon-close,
+ {
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.fa fa-times {
+
+color: #311e3e !important;
+
 }
 
 .menu-icon:hover,
@@ -1123,6 +1175,107 @@ pre code {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+/* button /////////////////////////////////////////////////////////////////////////////////*/
+
+
+.push_button {
+    position: relative;
+    width:220px;
+    height:40px;
+    text-align:center;
+    color:#FFF;
+    text-decoration:none;
+    line-height:43px;
+    font-family:'Oswald', Helvetica;
+    display: block;
+    margin: 30px;
+}
+.push_button:before {
+    background:#f0f0f0;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
+
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+    box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+
+    position: absolute;
+    content: "";
+    left: -6px; right: -6px;
+    top: -6px; bottom: -10px;
+    z-index: -1;
+}
+
+.push_button:active {
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+    top:5px;
+}
+.push_button:active:before{
+    top: -11px;
+    bottom: -5px;
+    content: "";
+}
+
+.red {
+    text-shadow:-1px -1px 0 #A84155;
+    background: #D25068;
+    border:1px solid #D25068;
+
+    background-image:-webkit-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-moz-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-ms-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-o-linear-gradient(top, #F66C7B, #D25068);
+    background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.red:hover {
+    background: #F66C7B;
+    background-image:-webkit-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-moz-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-ms-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-o-linear-gradient(top, #D25068, #F66C7B);
+    background-image:linear-gradient(top, #D25068, #F66C7B);
+}
+
+.blue {
+    text-shadow:-1px -1px 0 #2C7982;
+    background: #3EACBA;
+    border:1px solid #379AA4;
+    background-image:-webkit-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image:-moz-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image:-ms-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image:-o-linear-gradient(top, #48C6D4, #3EACBA);
+    background-image:linear-gradient(top, #48C6D4, #3EACBA);
+
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
+}
+
+.blue:hover {
+    background: #48C6D4;
+    background-image:-webkit-linear-gradient(top, #3EACBA, #48C6D4);
+    background-image:-moz-linear-gradient(top, #3EACBA, #48C6D4);
+    background-image:-ms-linear-gradient(top, #3EACBA, #48C6D4);
+    background-image:-o-linear-gradient(top, #3EACBA, #48C6D4);
+    background-image:linear-gradient(top, #3EACBA, #48C6D4);
 }
 
 /* = = = = = = = = = = Post-Card Styles = = = = = = = = = = */
@@ -1230,15 +1383,23 @@ pre code {
 
 /* = = = = = = = = = = Footer Styles = = = = = = = = = = */
 .main-footer {
-  padding: 15px 0;
-  background-color: #efefef;
+  position: relative;
+right: 100p;
+bottom: 0;
+left: 0;
+padding: 1rem;
+background-color: none;
+text-align: center;
+width: 100%;
 }
 
 .main-footer .copyright {
   text-align: center;
-  color: #311e3e;
+  color: white;
   font-size: 16px;
 }
+
+
 
 /* = = = = = = = = = = Post-Page Styles = = = = = = = = = = */
 .page-image {
@@ -1293,7 +1454,7 @@ pre code {
   margin-top: 30px;
   padding-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: none;
 }
 
 .page-footer .page-tag,
